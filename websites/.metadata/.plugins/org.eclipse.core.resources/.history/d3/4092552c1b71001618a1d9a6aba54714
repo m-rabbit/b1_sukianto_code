@@ -6,22 +6,17 @@
 
 		<meta charset="UTF-8">
 		<title> Thea's Intro Website </title>
-		<script src="JS/jquery-3.1.0.min.js"></script>
-		<script src="JS/my-code.js"></script>
-		<link rel="stylesheet" type="text/css" href="CSS/w3.css">
+		<script src="JS/jquery-3.1.0.min.js"</script>
+		<script src="JS/my-code.js"</script>
+		<link rel="stylesheet" href="CSS/w3.css">
 		<link rel="stylesheet" type="text/css" href="CSS/intro.css">
 
 	</head>
 
 	<body>
-		<h1> Hello there! </h1>
-		<p>
-			My home school is CHS, and I am a junior.
-		</p>
+		<h1> Well hello there! </h1>
 		<h2> Website created by Thea S </h2>
-		<p>
-			02 September 2016
-		</p>
+
 		<hr>
 
 		<ul class="w3-navbar w3-card-2 w3-light-grey">
@@ -52,7 +47,7 @@
 					<a href="http://192.168.1.201/b1helm">Tanner Helm</a>
 				</div>
 			</li>
-
+			
 			<li class="w3-dropdown-hover w3-hover-aqua">
 				<a class="w3-hover-cyan" href="#">MVHS <i class="fa fa-caret-down"></i></a>
 				<div class="w3-dropdown-content w3-white w3-card-4">
@@ -66,14 +61,14 @@
 					<a href="#">Kyle Tippens</a>
 				</div>
 			</li>
-
+			
 			<li class="w3-dropdown-hover w3-hover-aqua">
 				<a class="w3-hover-cyan" href="#">MHS <i class="fa fa-caret-down"></i></a>
 				<div class="w3-dropdown-content w3-white w3-card-4">
 					<a href="#">Kien Tran</a>
 				</div>
 			</li>
-
+			
 			<li class="w3-dropdown-hover w3-hover-aqua">
 				<a class="w3-hover-cyan" href="#">RMHS <i class="fa fa-caret-down"></i></a>
 				<div class="w3-dropdown-content w3-white w3-card-4">
@@ -83,7 +78,8 @@
 					<a href="#">Kyle Neu</a>
 				</div>
 			</li>
-
+			
+			
 		</ul>
 		<br>
 

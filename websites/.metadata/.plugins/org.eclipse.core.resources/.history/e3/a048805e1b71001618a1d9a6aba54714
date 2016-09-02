@@ -7,22 +7,15 @@ h1 {
 	text-align: center;
 	color: #FFFFFF;
 	border: 4px groove #3399ff;
-	margin-left: 5%;
-	margin-right: 5%;
 	padding: 20px;
 }
 
-p{
-	text-align: center;
-	color: #FFFFFF;
-}
 h2 {
 	text-align: center;
 	color:#cc0099;
 	border: 4px groove #3399ff;
 	padding: 20px;
-	margin-left: 5%;
-	margin-right: 5%;
+	
 }
 
 div {

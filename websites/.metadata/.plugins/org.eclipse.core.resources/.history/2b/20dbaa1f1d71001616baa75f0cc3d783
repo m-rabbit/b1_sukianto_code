@@ -6,9 +6,9 @@
 
 		<meta charset="UTF-8">
 		<title> Thea's Intro Website </title>
-		<script src="JS/jquery-3.1.0.min.js"></script>
-		<script src="JS/my-code.js"></script>
-		<link rel="stylesheet" type="text/css" href="CSS/w3.css">
+		<script src="JS/jquery-3.1.0.min.js"</script>
+		<script src="JS/my-code.js"</script>
+		<link rel="stylesheet" href="CSS/w3.css">
 		<link rel="stylesheet" type="text/css" href="CSS/intro.css">
 
 	</head>
@@ -19,9 +19,7 @@
 			My home school is CHS, and I am a junior.
 		</p>
 		<h2> Website created by Thea S </h2>
-		<p>
-			02 September 2016
-		</p>
+
 		<hr>
 
 		<ul class="w3-navbar w3-card-2 w3-light-grey">
