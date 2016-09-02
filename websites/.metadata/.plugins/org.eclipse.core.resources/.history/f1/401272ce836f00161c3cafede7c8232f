@@ -1,0 +1,26 @@
+body {
+	background-color: #000000;
+	font-family: Verdana, Arial;
+}
+
+h1 {
+	text-align: center;
+	color: #cc0099;
+	border: 2px #3399ff;
+}
+
+h2 {
+	text-align: center;
+	color:#3399ff;
+	border: 2px #3399ff;
+	
+}
+
+div {
+	/*
+	 * text-align: center;
+	 */
+	display: block;
+	margin: auto;
+	width: 800px;
+}

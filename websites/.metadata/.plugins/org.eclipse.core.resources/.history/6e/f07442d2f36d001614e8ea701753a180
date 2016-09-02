@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="UTF-8">
+		<title> Thea's Intro Website </title>
+		<link rel="stylesheet" type="text/css" href="CSS/intro.css">
+
+	</head>
+
+	<body>
+		<h1> Welcome! </h1>
+		<h2> Website created by Thea Sukianto </h2>
+		<img src="MyIntroWebsite_01/Images/Magical-mirai.jpg" alt="Magical Mirai 2014" style="width:1000px;height:1000px;">
+</body>
+	</head>
+</html>

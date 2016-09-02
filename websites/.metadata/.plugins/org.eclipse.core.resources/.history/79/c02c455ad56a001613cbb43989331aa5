@@ -1,0 +1,14 @@
+body {
+	background-color: #3399ff;
+	font-family: Verdana, Arial;
+}
+
+h1 {
+	text-align: center;
+	color: #ffff99;
+}
+
+h2 {
+	text-align: center;
+	color: #ffffff;
+}

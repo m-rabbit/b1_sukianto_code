@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="UTF-8">
+		<title> Thea's Intro Website </title>
+		<link rel="stylesheet" type="text/css" href="intro.css">
+
+	</head>
+
+	<body>
+		<h1> Welcome! </h1>
+		<h2> Website created by Thea Sukianto </h2>
+	</body>
+</html>
