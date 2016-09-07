@@ -120,9 +120,9 @@
 			</div>
 			
 			<div class="w3-display-container mySlides">
-				<img src="Images/nebula_600.jpg" style="width:100%">
+				<img src="Images/HikingLedge_600.jpg" style="width:100%">
 				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-					Mysteries of space
+					So high
 				</div>
 			</div>
 			
@@ -138,6 +138,7 @@
 			<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">]</a>
 
 		</div>
+
 		<script>
 			var slideIndex = 1;
 			showDivs(slideIndex);
@@ -161,5 +162,6 @@
 				x[slideIndex - 1].style.display = "block";
 			}
 		</script>
+
 	</body>
 </html>

@@ -25,11 +25,11 @@ h2 {
 	margin-right: 5%;
 }
 
-.picture {
+div {
 	/*
 	 * text-align: center;
 	 */
 	display: block;
 	margin: auto;
-	width: 800px;
+	width: 600px;
 }

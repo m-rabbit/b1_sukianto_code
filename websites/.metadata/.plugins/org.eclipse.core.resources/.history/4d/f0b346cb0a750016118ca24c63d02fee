@@ -87,7 +87,7 @@
 		</ul>
 		<br>
 
-		<div class ="picture">
+		<div>
 			<h1>Click here to view one of my favorite pictures!</h1>
 			<img id="favPic" src="Images/Magical-mirai_800.jpg" alt="Magical-mirai_800.jpg">
 		</div>
@@ -96,7 +96,7 @@
 		<hr>
 		<br>
 
-		<div class="w3-content" style="max-width:600px;position:relative">
+		<div class="w3-content" style="max-width:600px position:relative">
 
 			<div class="w3-display-container mySlides">
 				<img src="Images/Tesla Brent Ohl_600.jpg" style="width:100%">
@@ -118,26 +118,13 @@
 					The fastest man on earth
 				</div>
 			</div>
-			
-			<div class="w3-display-container mySlides">
-				<img src="Images/nebula_600.jpg" style="width:100%">
-				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-					Mysteries of space
-				</div>
-			</div>
-			
-			<div class="w3-display-container mySlides">
-				<img src="Images/idaho-falls_600.jpg" style="width:100%">
-				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-					What a beautiful view!
-				</div>
-			</div>
 
 
 			<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">[</a>
 			<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">]</a>
 
 		</div>
+
 		<script>
 			var slideIndex = 1;
 			showDivs(slideIndex);
@@ -161,5 +148,6 @@
 				x[slideIndex - 1].style.display = "block";
 			}
 		</script>
+
 	</body>
 </html>

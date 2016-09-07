@@ -25,7 +25,7 @@ h2 {
 	margin-right: 5%;
 }
 
-.picture {
+div {
 	/*
 	 * text-align: center;
 	 */

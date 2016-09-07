@@ -138,6 +138,7 @@
 			<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">]</a>
 
 		</div>
+
 		<script>
 			var slideIndex = 1;
 			showDivs(slideIndex);
@@ -161,5 +162,6 @@
 				x[slideIndex - 1].style.display = "block";
 			}
 		</script>
+
 	</body>
 </html>
