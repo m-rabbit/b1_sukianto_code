@@ -10,26 +10,36 @@
 		<script src="JS/my-code.js"></script>
 		<link rel="stylesheet" type="text/css" href="CSS/w3.css">
 		<link rel="stylesheet" type="text/css" href="CSS/intro.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
 	</head>
 
 	<body>
-		<h1> Hello there! </h1>
-		<p>
-			My home school is CHS, and I am a junior.
-		</p>
-		<h2> Website created by Thea S </h2>
-		<p>
-			02 September 2016
-		</p>
-		<hr>
+
+		<div id="banner">
+			<h1> Hello there! </h1>
+			<p>
+				My home school is CHS, and I am a junior.
+			</p>
+			<h2> Website created by Thea S </h2>
+			<p>
+				08 September 2016
+			</p>
+			<hr>
+		</div>
 
 		<ul class="w3-navbar w3-card-2 w3-light-grey">
 			<li>
-				<a href="http://192.168.1.156/b1mcclendon">Mr. M</a>
+				<a href="http://192.168.1.100/b1mcclendon">Mr. M</a>
 			</li>
-			<li>
-				<a href="#">My Home</a>
+
+			<li class="w3-dropdown-hover w3-hover-aqua">
+				<a class="w3-hover-cyan" href="#">Websites<i class="fa fa-caret-down"></i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="http://google.com">Google</a>
+					<a href="#">Add link here</a>
+					<a href="#">Add link here</a>
+				</div>
 			</li>
 
 			<li class="w3-dropdown-hover w3-hover-aqua">
@@ -96,48 +106,53 @@
 		<hr>
 		<br>
 
-		<div class="w3-content" style="max-width:600px;position:relative">
+		<div id="slideshow">
+			<div class="w3-content" style="max-width:600px;position:relative">
 
-			<div class="w3-display-container mySlides">
-				<img src="Images/Tesla Brent Ohl_600.jpg" style="width:100%">
-				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-					Amazing Tesla Coil!
+				<div class="w3-display-container mySlides">
+					<img src="Images/Tesla Brent Ohl_600.jpg" style="width:100%">
+					<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+						Amazing Tesla Coil!
+					</div>
 				</div>
-			</div>
 
-			<div class="w3-display-container mySlides">
-				<img src="Images/AllysonFelix_600.jpg" style="width:100%">
-				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-					I wish I could run like that!
+				<div class="w3-display-container mySlides">
+					<img src="Images/AllysonFelix_600.jpg" style="width:100%">
+					<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+						I wish I could run like that!
+					</div>
 				</div>
-			</div>
 
-			<div class="w3-display-container mySlides">
-				<img src="Images/UsainBolt_600.jpg" style="width:100%">
-				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-					The fastest man on earth
+				<div class="w3-display-container mySlides">
+					<img src="Images/UsainBolt_600.jpg" style="width:100%">
+					<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+						The fastest man on earth
+					</div>
 				</div>
-			</div>
-			
-			<div class="w3-display-container mySlides">
-				<img src="Images/nebula_600.jpg" style="width:100%">
-				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-					Mysteries of space
+
+				<div class="w3-display-container mySlides">
+					<img src="Images/nebula_600.jpg" style="width:100%">
+					<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+						Mysteries of space
+					</div>
 				</div>
-			</div>
-			
-			<div class="w3-display-container mySlides">
-				<img src="Images/idaho-falls_600.jpg" style="width:100%">
-				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-					What a beautiful view!
+
+				<div class="w3-display-container mySlides">
+					<img src="Images/idaho-falls_600.jpg" style="width:100%">
+					<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+						What a beautiful view!
+					</div>
 				</div>
+
+				<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">[</a>
+				<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">]</a>
+
 			</div>
-
-
-			<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">[</a>
-			<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">]</a>
-
 		</div>
+
+		<br>
+		<hr>
+		<br>
 		<script>
 			var slideIndex = 1;
 			showDivs(slideIndex);
@@ -161,5 +176,9 @@
 				x[slideIndex - 1].style.display = "block";
 			}
 		</script>
+		/*
+		* <script src="JS/slideshow.jss"</script>
+		*/
+
 	</body>
 </html>

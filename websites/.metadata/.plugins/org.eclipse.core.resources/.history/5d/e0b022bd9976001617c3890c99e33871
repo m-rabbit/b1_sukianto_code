@@ -1,0 +1,39 @@
+body {
+	background-color: #000000;
+	font-family: Raleway, sans-serif;
+}
+
+#banner {
+	/*
+	 * background-color: #CCCCCC;
+	 */
+	background: linear-gradient(gray, cyan);
+}
+h1 {
+	text-align: center;
+	color: #FFFFFF;
+	padding: 20px;
+	font-family: Raleway, sans-serif;
+	text-shadow: 2px 2px 5px black;
+}
+
+p{
+	text-align: center;
+	color: #FFFFFF;
+}
+h2 {
+	text-align: center;
+	color:#cc0099;
+	padding: 20px;
+	font-family: Raleway, sans-serif;
+}
+
+.picture {
+	/*
+	 * text-align: center;
+	 */
+	border: #FFFFFF solid 2px;
+	display: block;
+	margin: auto;
+	width: 800px;
+}
