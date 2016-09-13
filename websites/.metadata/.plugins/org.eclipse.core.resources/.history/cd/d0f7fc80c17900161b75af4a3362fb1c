@@ -36,6 +36,7 @@ h2 {
 	border-width: 10px;
 	padding: 20px;
 	box-shadow: 8px -8px 8px #cc0099;
+	margin-left: 270px;
 }
 
 /* notes (comments) to future self, and co-developers on a team

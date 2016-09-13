@@ -8,7 +8,6 @@
 		<title> Thea's Intro Website </title>
 		<script src="JS/jquery-3.1.0.min.js"></script>
 		<script src="JS/my-code.js"></script>
-		<script src="JS/selectors02.js"></script>
 		<link rel="stylesheet" type="text/css" href="CSS/w3.css">
 		<link rel="stylesheet" type="text/css" href="CSS/intro.css">
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -51,7 +50,7 @@
 					<a href="#">Ben Larson</a>
 					<a href="#">Logan Way</a>
 					<a href="#">Zachary Scherer</a>
-					<a href="http://192.168.1.129/b1sukianto">Thea Sukianto</a>
+					<a href="#">Thea Sukianto</a>
 					<a href="#">Porter Fletcher</a>
 				</div>
 			</li>
@@ -98,7 +97,7 @@
 		</ul>
 		<br>
 
-		<div>
+		<div class ="picture">
 			<h1>Click here to view one of my favorite pictures!</h1>
 			<img id="favPic" src="Images/Magical-mirai_800.jpg" alt="Magical-mirai_800.jpg">
 		</div>
@@ -106,8 +105,6 @@
 		<br>
 		<hr>
 		<br>
-
-		<!--comment NTS, and note to other developers on your team -->
 
 		<div id="slideshow">
 			<div class="w3-content" style="max-width:600px;position:relative">
@@ -156,21 +153,6 @@
 		<br>
 		<hr>
 		<br>
-
-		<!-- JQuery part 2 selectors buttons -->
-
-		<input id="testbutton" type="button" value="test">
-		<div id="selectors02">
-			<h3>This is the<strong> first</strong> line of text</h3>
-			<h3>This is the<strong> second</strong> line of text</h3>
-		</div>
-
-		<h3>This is the<strong> third</strong> line of text</h3>
-		<h3>This is the<strong> fourth</strong> line of text</h3>
-		<br>
-		<hr>
-		<br>
-
 		<script>
 			var slideIndex = 1;
 			showDivs(slideIndex);

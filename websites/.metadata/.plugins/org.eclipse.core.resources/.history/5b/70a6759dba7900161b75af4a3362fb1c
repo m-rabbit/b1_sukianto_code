@@ -1,7 +1,6 @@
 body {
 	background-color: #000000;
 	font-family: Raleway, sans-serif;
-	text-align: center;
 }
 
 #banner {
@@ -30,19 +29,24 @@ h2 {
 	text-shadow: 2px 2px 5px white;
 }
 
+.picture {
+	border: #FFFFFF ridge 2px;
+	display: block;
+	margin: auto;
+	width: 825px;
+	text-align: center;
+}
 
 #favPic {
 	border: #cc0099 ridge 2px;
 	border-width: 10px;
 	padding: 20px;
+	width: 40%;
 	box-shadow: 8px -8px 8px #cc0099;
+	margin: auto;
+	text-align: center;
 }
 
-/* notes (comments) to future self, and co-developers on a team
- * used a nested div (div followed by another div)
- * so had to use width and margin
- * to align my boxes
- */
 #slideshow {
 	border: #cc0099 ridge 2px;
 	border-width: 10px;

@@ -8,7 +8,6 @@
 		<title> Thea's Intro Website </title>
 		<script src="JS/jquery-3.1.0.min.js"></script>
 		<script src="JS/my-code.js"></script>
-		<script src="JS/selectors02.js"></script>
 		<link rel="stylesheet" type="text/css" href="CSS/w3.css">
 		<link rel="stylesheet" type="text/css" href="CSS/intro.css">
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -160,13 +159,11 @@
 		<!-- JQuery part 2 selectors buttons -->
 
 		<input id="testbutton" type="button" value="test">
-		<div id="selectors02">
-			<h3>This is the<strong> first</strong> line of text</h3>
-			<h3>This is the<strong> second</strong> line of text</h3>
+		<div>
+			<p>This is the<strong>first</strong> line of text</p>
+			<p>This is the<strong>second</strong> line of text</p>
 		</div>
 
-		<h3>This is the<strong> third</strong> line of text</h3>
-		<h3>This is the<strong> fourth</strong> line of text</h3>
 		<br>
 		<hr>
 		<br>
