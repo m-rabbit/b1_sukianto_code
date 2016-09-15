@@ -46,13 +46,13 @@
 			<li class="w3-dropdown-hover w3-hover-aqua">
 				<a class="w3-hover-cyan" href="#">CHS <i class="fa fa-caret-down"></i></a>
 				<div class="w3-dropdown-content w3-white w3-card-4">
-					<a href="http://192.168.1.173/b1school">Jonathon Nugent</a>
-					<a href="http://192.168.1./b1school">Dallin Dansie</a>
-					<a href="http://192.168.1.124/b1school">Ben Larson</a>
-					<a href="http://192.168.1.108/b1school">Logan Way</a>
-					<a href="http://192.168.1.129/b1school">Thea Sukianto</a>
-					<a href="http://192.168.1.123/b1school">Porter Fletcher</a>
-					<a href="http://192.168.1.101/b1school">Zachary Scherer</a>
+					<a href="#">Jonathon Nugent</a>
+					<a href="#">Dallin Dansie</a>
+					<a href="#">Ben Larson</a>
+					<a href="#">Logan Way</a>
+					<a href="#">Zachary Scherer</a>
+					<a href="http://192.168.1.129/b1sukianto">Thea Sukianto</a>
+					<a href="#">Porter Fletcher</a>
 				</div>
 			</li>
 

@@ -6,16 +6,21 @@
 		<meta charset="UTF-8">
 		<title>My Typical School Day</title>
 		<link rel="stylesheet" type="text/css" href="css/w3.css">
-		<link rel="stylesheet" type="text/css" href="css/school.css">
-		<script src="js/jquery-3.1.0.min.js"></script>
+
+		<script src="js/jquery-3.1.0.min.js"</script>
 
 	</head>
 
 	<body>
 		<div id="banner">
-			<h1>Welcome to my average school day!</h1>
+			<h1> Hello there! </h1>
+			<p>
+				My home school is CHS, and I am a junior.
+			</p>
 			<h2> Website created by Thea S </h2>
-			<img id="bannerpic" src="images/row.JPG" alt="My row in Web Design">
+			<p>
+				08 September 2016
+			</p>
 			<hr>
 		</div>
 		
@@ -36,13 +41,13 @@
 			<li class="w3-dropdown-hover w3-hover-aqua">
 				<a class="w3-hover-cyan" href="#">CHS <i class="fa fa-caret-down"></i></a>
 				<div class="w3-dropdown-content w3-white w3-card-4">
-					<a href="http://192.168.1.173/b1school">Jonathon Nugent</a>
-					<a href="http://192.168.1.118/b1school">Dallin Dansie</a>
-					<a href="http://192.168.1.124/b1school">Ben Larson</a>
-					<a href="http://192.168.1.108/b1school">Logan Way</a>
+					<a href="#">Jonathon Nugent</a>
+					<a href="#">Dallin Dansie</a>
+					<a href="#">Ben Larson</a>
+					<a href="#">Logan Way</a>
+					<a href="#">Zachary Scherer</a>
 					<a href="http://192.168.1.129/b1school">Thea Sukianto</a>
-					<a href="http://192.168.1.123/b1school">Porter Fletcher</a>
-					<a href="http://192.168.1.101/b1school">Zachary Scherer</a>
+					<a href="#">Porter Fletcher</a>
 				</div>
 			</li>
 
@@ -50,38 +55,38 @@
 				<a class="w3-hover-cyan" href="#">EHS <i class="fa fa-caret-down"></i></a>
 				<div class="w3-dropdown-content w3-white w3-card-4">
 					<a href="http://192.168.1.110/b1school">John Houser</a>
-					<a href="http://192.168.1.175/b1school">Tanner Helm</a>
+					<a href="http://192.168.1.201/b1school">Tanner Helm</a>
 				</div>
 			</li>
 
 			<li class="w3-dropdown-hover w3-hover-aqua">
 				<a class="w3-hover-cyan" href="#">MVHS <i class="fa fa-caret-down"></i></a>
 				<div class="w3-dropdown-content w3-white w3-card-4">
-					<a href="http://192.168.1.104/b1school">Mason Powell</a>
-					<a href="http://192.168.1.106/b1school">Joseph Moore</a>
-					<a href="http://192.168.1.107/b1school">Chase KD</a>
-					<a href="http://192.168.1.113/b1school">Gavin Benson</a>
-					<a href="http://192.168.1.114/b1school">Justin Fernandez</a>
-					<a href="http://192.168.1./b1school">Ethan Groner</a>
-					<a href="http://192.168.1.103/b1school">Austin Hoagland</a>
-					<a href="http://192.168.1.131/b1school">Kyle Tippens</a>
+					<a href="#">Mason Powell</a>
+					<a href="#">Joseph Moore</a>
+					<a href="#">Chase KD</a>
+					<a href="#">Gavin Benson</a>
+					<a href="#">Justin Fernandez</a>
+					<a href="#">Ethan Groner</a>
+					<a href="#">Austin Hoagland</a>
+					<a href="#">Kyle Tippens</a>
 				</div>
 			</li>
 
 			<li class="w3-dropdown-hover w3-hover-aqua">
 				<a class="w3-hover-cyan" href="#">MHS <i class="fa fa-caret-down"></i></a>
 				<div class="w3-dropdown-content w3-white w3-card-4">
-					<a href="http://192.168.1.119/b1school">Kien Tran</a>
+					<a href="#">Kien Tran</a>
 				</div>
 			</li>
 
 			<li class="w3-dropdown-hover w3-hover-aqua">
 				<a class="w3-hover-cyan" href="#">RMHS <i class="fa fa-caret-down"></i></a>
 				<div class="w3-dropdown-content w3-white w3-card-4">
-					<a href="http://192.168.1.121/b1school">Michael Cleverdon</a>
-					<a href="http://192.168.1.176/b1school">Ethan Alvi</a>
-					<a href="http://192.168.1.122/b1school">Alyse Clements</a>
-					<a href="http://192.168.1.120/b1school">Kyle Neu</a>
+					<a href="#">Michael Cleverdon</a>
+					<a href="#">Ethan Alvi</a>
+					<a href="#">Alyse Clements</a>
+					<a href="#">Kyle Neu</a>
 				</div>
 			</li>
 

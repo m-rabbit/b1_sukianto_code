@@ -6,7 +6,7 @@
 		<meta charset="UTF-8">
 		<title>My Typical School Day</title>
 		<link rel="stylesheet" type="text/css" href="css/w3.css">
-		<link rel="stylesheet" type="text/css" href="css/school.css">
+
 		<script src="js/jquery-3.1.0.min.js"></script>
 
 	</head>
@@ -15,7 +15,7 @@
 		<div id="banner">
 			<h1>Welcome to my average school day!</h1>
 			<h2> Website created by Thea S </h2>
-			<img id="bannerpic" src="images/row.JPG" alt="My row in Web Design">
+			<img src="images/row.JPG" alt="My row in Web Design">
 			<hr>
 		</div>
 		
