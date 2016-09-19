@@ -15,5 +15,4 @@
 	margin-right: 20px;
 	text-align: center;
 	background: linear-gradient(black, cyan);
-	color:white;
 }

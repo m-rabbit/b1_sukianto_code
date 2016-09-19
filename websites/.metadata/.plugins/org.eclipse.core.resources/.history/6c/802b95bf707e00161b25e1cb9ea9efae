@@ -1,0 +1,13 @@
+#bannerpic {
+	float: right;
+	margin: 0 0 10px 10px;
+	margin-top: 0 !important;
+}
+
+.floatclear {
+	clear: both;
+}
+
+#banner {
+	margin-left: 15px;
+}

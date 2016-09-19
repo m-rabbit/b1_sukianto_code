@@ -1,9 +1,9 @@
 #bannerpic {
 	float: right;
 	margin: 0 0 10px 10px;
-	border: cyan ridge 2px;
+	border: #cc0099 ridge 2px;
 	border-width: 10px;
-	box-shadow: 8px -8px 8px cyan;
+	box-shadow: 8px -8px 8px #cc0099;
 }
 
 .floatclear {
@@ -13,7 +13,4 @@
 #banner {
 	margin-left: 20px;
 	margin-right: 20px;
-	text-align: center;
-	background: linear-gradient(black, cyan);
-	color:white;
 }
