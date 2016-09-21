@@ -17,3 +17,8 @@
 	background: linear-gradient(black, cyan);
 	color:white;
 }
+
+#aboutmebutton {
+	background-color: white;
+	color: #9C27B0;
+}

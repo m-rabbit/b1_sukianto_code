@@ -56,3 +56,8 @@ h2 {
 	background-color: #000000;
 	
 }
+
+#buttonpic {
+	border: #cc0099 ridge 2px;
+	border-width: 10px;
+}

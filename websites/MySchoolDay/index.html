@@ -16,9 +16,10 @@
 			<img id="bannerpic" src="images/class2.JPG" alt="My row in Web Design">
 			<h1>Welcome to my school day!</h1>
 			<h2> Website created by Thea S </h2>
+			<input id="aboutmebutton" type="button" value="About Me">
 			<hr class="floatclear">
 		</div>
-		
+
 		<ul class="w3-navbar w3-card-2 w3-light-grey">
 			<li>
 				<a href="http://192.168.1.100/b1school">Mr. M</a>
@@ -86,6 +87,89 @@
 			</li>
 
 		</ul>
+		<hr><br><hr>
+		<div id="slideshow">
+			<div class="w3-content" style="max-width:600px;position:relative">
+
+				<div class="w3-display-container mySlides">
+					<img src="images/luke.JPG" style="width:100%">
+					<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+						Luke
+					</div>
+				</div>
+
+				<div class="w3-display-container mySlides">
+					<img src="images/period2b.JPG" style="width:100%">
+					<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+						BPA Squad
+					</div>
+				</div>
+
+				<div class="w3-display-container mySlides">
+					<img src="images/row.JPG" style="width:100%">
+					<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+						My row in Web Design and Dev
+					</div>
+				</div>
+
+				<div class="w3-display-container mySlides">
+					<img src="images/class_600.JPG" style="width:100%">
+					<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+						Web Design and Dev
+					</div>
+				</div>
+
+				<div class="w3-display-container mySlides">
+					<img src="images/sriram.JPG" style="width:100%">
+					<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+						Sriram
+					</div>
+				</div>
+
+				<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">[</a>
+				<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">]</a>
+
+			</div>
+		</div>
+
+		<br>
+		<hr>
+		<br>
+
+		<!-- JQuery part 2 selectors buttons -->
+
+		<input id="testbutton" type="button" value="Show Row3">
+		<div id="selectors02">
+
+		</div>
+
+		<br>
+		<hr>
+		<br>
+
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				if (n > x.length) {
+					slideIndex = 1;
+				}
+				if (n < 1) {
+					slideIndex = x.length;
+				}
+				for ( i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				x[slideIndex - 1].style.display = "block";
+			}
+		</script>
 	</body>
 
 </html>
