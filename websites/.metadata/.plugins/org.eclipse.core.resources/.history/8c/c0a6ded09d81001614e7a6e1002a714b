@@ -19,7 +19,7 @@
 			<input id="aboutmebutton" type="button" value="About Me">
 			<script src="js/aboutme.js"></script>
 			<p id="aboutmeinfo">
-				Thanks for visiting my website! I'm a junior at Centennial HS and this for my Web Design and Development class.
+				About Me
 			</p>
 			<hr class="floatclear">
 		</div>
