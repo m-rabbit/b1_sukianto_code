@@ -1,6 +1,28 @@
+body {
+	background-color: #9E9E9E;
+}
+
 #bannerpic {
 	float: right;
 	margin: 0 0 10px 10px;
+	border: cyan ridge 2px;
+	border-width: 10px;
+	box-shadow: 8px -8px 8px cyan;
+}
+
+#video1 {
+	margin-left: 550px;
+	margin-right: 550px;
+	text-align: center;
+	border: cyan ridge 2px;
+	border-width: 10px;
+	box-shadow: 8px -8px 8px cyan;
+}
+
+#video2 {
+	margin-left: 550px;
+	margin-right: 550px;
+	text-align: center;
 	border: cyan ridge 2px;
 	border-width: 10px;
 	box-shadow: 8px -8px 8px cyan;
