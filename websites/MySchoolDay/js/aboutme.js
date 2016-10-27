@@ -7,12 +7,12 @@ $(document).ready(function() {
 	});
 	
 	$(".mousechange").mouseenter(function() {
-		$(this).css("font-size", "2.5em");
+		$(this).css("font-size", "5em");
 		$(this).css("color", "#0000FF");
 	});
 	
 	$(".mousechange").mouseleave(function() {
-		$(this).css("font-size", "2em");
+		$(this).css("font-size", "4em");
 		$(this).css("color", "#FFFFFF");
 	});
 });

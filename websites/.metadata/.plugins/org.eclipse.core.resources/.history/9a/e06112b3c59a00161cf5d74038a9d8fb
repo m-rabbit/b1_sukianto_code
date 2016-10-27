@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Free Web tutorials">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="Thea S">
+		<title>My Instructions</title>
+		<link rel="stylesheet" type="text/css" href="css/w3.css">
+		<link rel="stylesheet" type="text/css" href="css/instructions.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/instructions.js"></script>
+
+	</head>
+
+	<body>
+
+		<h1>Click Me!</h1>
+		<h2>How to Code a Website</h2>
+		<h3>
+		<div>
+			<img class="images" src="images/Web_Development.jpg" alt="Web_Development">
+		</div></h3>
+
+		<br>
+		<hr>
+		<br>
+		
+	<div id="jq">
+		<h4>Picture 1: Snowboard</h4>
+		<img src="images/snowboard_1_600.png" alt="snowboard 600">
+	</div>
+	
+	<br><hr><br>
+	
+		<div>
+			
+			<img src="images/snowboard.jpg" alt="snowboard sequence">
+			
+			<img src="images/snowboarder.gif" alt="snowboarder.gif">
+		</div>
+	</body>
+</html>

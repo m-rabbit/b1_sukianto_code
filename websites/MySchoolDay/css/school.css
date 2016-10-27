@@ -1,33 +1,39 @@
 body {
-	background-color: #9E9E9E;
+	background-image: url("../images/hexagon.jpg");
+	font-family: "Montserrat", sans-serif;
+	background-size: cover;
 }
 
+h1{
+	font-size: 4em;
+}
 #bannerpic {
 	float: right;
 	margin: 0 0 10px 10px;
-	border: cyan ridge 2px;
+	border: gray ridge 2px;
 	border-width: 10px;
-	box-shadow: 8px -8px 8px cyan;
 }
 
+.videos {
+	
+}
 #video1 {
-	margin-left: 550px;
-	margin-right: 550px;
 	text-align: center;
-	border: cyan ridge 2px;
-	border-width: 10px;
-	box-shadow: 8px -8px 8px cyan;
 }
 
 #video2 {
-	margin-left: 550px;
-	margin-right: 550px;
 	text-align: center;
-	border: cyan ridge 2px;
-	border-width: 10px;
-	box-shadow: 8px -8px 8px cyan;
 }
 
+.w3-card-4 {
+	width: 40%;
+}
+
+.w3-card-5 {
+	width: 40%;
+	float: right;
+	margin: 0 0 10px 10px;
+}
 .floatclear {
 	clear: both;
 }
@@ -36,21 +42,50 @@ body {
 	margin-left: 20px;
 	margin-right: 20px;
 	text-align: center;
-	background: linear-gradient(black, cyan);
-	color:white;
+	color: white;
 }
 
 #aboutmebutton {
 	background-color: white;
 	color: #9C27B0;
-	
 }
 
-
 #aboutmebutton:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .mousechange {
 	text-shadow: 8px 8px 8px #000000;
+	font-family: "Montserrat", sans-serif;
+}
+
+table, th, td {
+	border: 1px solid black;
+	/*border-collapse: collapse;*/
+	padding: 5px;
+}
+th, td {
+	padding: 15px;
+}
+th {
+	background-color: #DDFFFF;
+}
+
+td {
+	background-color: #E7FFE7;
+}
+
+table {
+	border-spacing: 15px;
+}
+
+.pCenter {
+	text-align: center;
+}
+
+.piccenter {
+	border: white ridge 2px;
+	border-width: 10px;
+	box-shadow: 8px -8px 8px white;
+	padding: 1em;
 }
