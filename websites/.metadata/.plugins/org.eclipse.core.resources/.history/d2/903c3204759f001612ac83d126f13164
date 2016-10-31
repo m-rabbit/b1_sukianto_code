@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>My Typical School Day</title>
+		<link rel="stylesheet" type="text/css" href="css/w3.css">
+		<link rel="stylesheet" type="text/css" href="css/school.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<script src="js/jquery-3.1.0.min.js"></script>
+
+	</head>
+
+	<body>
+		<div id="banner">
+			<img id="bannerpic" src="images/centennial.png" alt="centennial.png">
+			<h1 class="mousechange">Welcome to my school day!</h1>
+			<h2> Website created by Thea S </h2>
+			<input id="aboutmebutton" type="button" value="About Me">
+			<script src="js/aboutme.js"></script>
+			<div id="aboutmeinfo">
+				<p>
+					Thanks for visiting my website! I'm a junior at Centennial HS and this for my Web Design and Development class.
+					I'm also:
+				</p>
+				<ul>
+					<li>
+						On the varsity XC squad
+					</li>
+					<li>
+						An aspiring software developer
+					</li>
+					<li>
+						A freelance Japanese translator(my channel below)
+					</li>
+					<iframe width="640" height="480" src="https://www.youtube.com/embed/J2_HvpAerTw"></iframe>
+				</ul>
+			</div>
+			<hr class="floatclear">
+		</div>
+
+		<ul class="w3-navbar w3-card-2 w3-light-grey">
+			<li>
+				<a href="http://192.168.1.100/b1school">Mr. M</a>
+			</li>
+
+			<li class="w3-dropdown-hover w3-hover-aqua">
+				<a class="w3-hover-cyan" href="#">Websites<i class="fa fa-caret-down"></i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="http://google.com">Google</a>
+					<a href="#">Add link here</a>
+					<a href="#">Add link here</a>
+				</div>
+			</li>
+
+			<li class="w3-dropdown-hover w3-hover-aqua">
+				<a class="w3-hover-cyan" href="#">CHS <i class="fa fa-caret-down"></i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="http://192.168.1.187/b1school">Jonathon N</a>
+					<a href="http://192.168.1.118/b1school">Dallin D</a>
+					<a href="http://192.168.1.124/b1school">Ben L</a>
+					<a href="http://192.168.1.108/b1school">Logan W</a>
+					<a href="http://192.168.1.129/b1school">Thea S</a>
+					<a href="http://192.168.1.123/b1school">Porter F</a>
+					<a href="http://192.168.1.101/b1school">Zachary S</a>
+				</div>
+			</li>
+
+			<li class="w3-dropdown-hover w3-hover-aqua">
+				<a class="w3-hover-cyan" href="#">EHS <i class="fa fa-caret-down"></i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="http://192.168.1.110/b1school">John H</a>
+					<a href="http://192.168.1.175/b1school">Tanner H</a>
+				</div>
+			</li>
+
+			<li class="w3-dropdown-hover w3-hover-aqua">
+				<a class="w3-hover-cyan" href="#">MVHS <i class="fa fa-caret-down"></i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="http://192.168.1.104/b1school">Mason P</a>
+					<a href="http://192.168.1.106/b1school">Joseph M</a>
+					<a href="http://192.168.1.107/b1school">Chase KD</a>
+					<a href="http://192.168.1.113/b1school">Gavin B</a>
+					<a href="http://192.168.1.114/b1school">Justin F</a>
+					<a href="http://192.168.1./b1school">Ethan G</a>
+					<a href="http://192.168.1.103/b1school">Austin H</a>
+					<a href="http://192.168.1.131/b1school">Kyle T</a>
+				</div>
+			</li>
+
+			<li class="w3-dropdown-hover w3-hover-aqua">
+				<a class="w3-hover-cyan" href="#">MHS <i class="fa fa-caret-down"></i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="http://192.168.1.119/b1school">Kien T</a>
+				</div>
+			</li>
+
+			<li class="w3-dropdown-hover w3-hover-aqua">
+				<a class="w3-hover-cyan" href="#">RMHS <i class="fa fa-caret-down"></i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="http://192.168.1.121/b1school">Michael C</a>
+					<a href="http://192.168.1.176/b1school">Ethan A</a>
+					<a href="http://192.168.1.122/b1school">Alyse C</a>
+					<a href="http://192.168.1.120/b1school">Kyle N</a>
+				</div>
+			</li>
+
+		</ul>
+		<hr>
+		<br>
+		<hr>
+		<div id="video1">
+			<div class="videos">
+				<video width="320" height="240" controls>
+					<source src="videos/TestMovie.ogg" type="video/ogg">
+					<source src="videos/TestMovie.mp4" type="video/mp4">
+					This browser does not support the video tag
+				</video>
+			</div>
+		</div>
+
+		<div id="video2">
+			<div class="videos">
+				<video width="320" height="240" controls>
+					<source src="videos/skeet.mp4" type="video/mp4">
+					<source src="videos/skeet.webm" type="video/webm">
+					<source src="videos/skeet.ogg" type="video/ogg">
+					This browser does not support the video tag
+
+				</video>
+			</div>
+		</div>
+
+		<br>
+		<hr>
+		<br>
+
+		<div id="slideshow">
+			<div class="w3-content" style="max-width:600px;position:relative">
+
+				<div class="w3-display-container mySlides">
+					<img src="images/bsu.jpg" style="width:100%">
+					<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+						JavaScript @ BSU CS Internship
+					</div>
+				</div>
+
+				<div class="w3-display-container mySlides">
+					<img src="images/advcs.jpg" style="width:100%">
+					<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+						Java @ TVMSC Advanced CS
+					</div>
+				</div>
+
+				<div class="w3-display-container mySlides">
+					<img src="images/row.JPG" style="width:100%">
+					<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+						My row in Web Design and Dev
+					</div>
+				</div>
+
+				<div class="w3-display-container mySlides">
+					<img src="images/class_600.JPG" style="width:100%">
+					<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+						Web Design and Dev
+					</div>
+				</div>
+
+				<div class="w3-display-container mySlides">
+					<img src="images/tvmsc.jpg" style="width:100%">
+					<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+						Treasure Valley Math and Science Center
+					</div>
+				</div>
+
+				<div class="w3-display-container mySlides">
+					<img src="images/chs.jpg" style="width:100%">
+					<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+						Centennial High School
+					</div>
+				</div>
+
+				<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">[</a>
+				<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">]</a>
+
+			</div>
+		</div>
+
+		<br>
+		<hr>
+		<br>
+
+		<div id="selectors02">
+			<input id="testbutton" type="button" value="Show Row3">
+		</div>
+
+		<br>
+		<hr>
+		<br>
+		<table style="width:55%; margin: auto">
+			 
+			<tr>
+				    <th>Practice Video</th>
+				    <th>Skeet Video</th
+				 
+			</tr>
+			<tr>
+				<td>
+				<video width="320" height="240" controls>
+					<source src="videos/TestMovie.ogg" type="video/ogg">
+					<source src="videos/TestMovie.mp4" type="video/mp4">
+					This browser does not support the video tag
+				</video></td>
+				<td>
+				<video width="320" height="240" controls>
+					<source src="videos/skeet.mp4" type="video/mp4">
+					<source src="videos/skeet.webm" type="video/webm">
+					<source src="videos/skeet.ogg" type="video/ogg">
+					This browser does not support the video tag
+
+				</video></td>
+			</tr>
+			<tr>
+				<td>
+				<p class="pCenter">
+					A video to get things working
+				</p></td>
+				<td>
+				<p class="pCenter">
+					A second video for a full screen table
+				</p></td>
+
+			</tr>
+
+			<tr>
+				    <th>Practice Video</th>
+				    <th>Skeet Video</th
+				 
+			</tr>
+			<tr>
+				<td>
+				<video width="320" height="240" controls>
+					<source src="videos/TestMovie.ogg" type="video/ogg">
+					<source src="videos/TestMovie.mp4" type="video/mp4">
+					This browser does not support the video tag
+				</video></td>
+				<td>
+				<video width="320" height="240" controls>
+					<source src="videos/skeet.mp4" type="video/mp4">
+					<source src="videos/skeet.webm" type="video/webm">
+					<source src="videos/skeet.ogg" type="video/ogg">
+					This browser does not support the video tag
+
+				</video></td>
+			</tr>
+			<tr>
+				<td>
+				<p class="pCenter">
+					A video to get things working
+				</p></td>
+				<td>
+				<p class="pCenter">
+					A second video for a full screen table
+				</p></td>
+
+			</tr>
+		</table>
+		<br>
+		<hr>
+		<br>
+		<script src="js/table.js"></script>
+		<table style="width:80%; margin: auto">
+			<tr>
+				<th id="tabletitle" colspan="3">My Favorite School Pictures - Click for Full Size</th>
+			</tr>
+			<div id="pictable">
+				<tr>
+					<td><a href="pages/pic01.html" target="_blank"> <img src="images/row_300.JPG" alt="row 300x200"> </a></td>
+					<td><a href="pages/pic02.html" target="_blank"> <img src="images/xc_300.jpg" alt="xc"> </a></td>
+					<td><a href="pages/pic03.html" target="_blank"> <img src="images/acs_300.JPG" alt="acs"> </a></td>
+				</tr>
+				<tr>
+					<td><a href="pages/pic04.html" target="_blank"> <img src="images/bsu_cs.jpg" alt="bsu"> </a></td>
+					<td><a href="pages/pic05.html" target="_blank"> <img src="images/tvmsc_300.jpg" alt="tvmsc"> </a></td>
+					<td><a href="pages/pic06.html" target="_blank"> <img src="images/bsu_300.jpg" alt="bsu code"> </a></td>
+				</tr>
+			</div>
+		</table>
+		<br>
+		<hr>
+		<br>
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				if (n > x.length) {
+					slideIndex = 1;
+				}
+				if (n < 1) {
+					slideIndex = x.length;
+				}
+				for ( i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				x[slideIndex - 1].style.display = "block";
+			}
+		</script>
+	</body>
+
+</html>

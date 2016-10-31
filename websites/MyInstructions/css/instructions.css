@@ -30,3 +30,12 @@ h2 {
 	display: block;
 	margin: auto;
 }
+
+#seqTable {
+	margin: auto;
+	width: 70%;
+	
+}
+td {
+	border: solid white 1px;
+}
