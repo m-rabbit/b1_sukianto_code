@@ -19,7 +19,7 @@ h2 {
 	font-family: 'Montserrat', sans-serif;
 }
 
-#jq {
+.jq {
 	background-color: cyan;
 	width: 60%;
 	margin: auto;
@@ -33,9 +33,9 @@ h2 {
 }
 
 #seqTable {
-	margin: auto;
 	width: 70%;
-	
+	margin: auto;
+	text-align: center;
 }
 td {
 	border: solid white 1px;
@@ -46,4 +46,10 @@ td {
 	font-size: 2.5em;
 	color: white;
 	background-color: cyan;
+}
+
+th {
+	background-color: cyan;
+	padding: 20px;
+	font-size: 2em;
 }

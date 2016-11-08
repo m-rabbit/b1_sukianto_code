@@ -1,0 +1,55 @@
+body {
+	text-align: center;
+	background-image: url("../images/christmas-snow-background.jpg");
+	background-size: cover;
+}
+
+.images {
+	border: white ridge 2px;
+	border-width: 10px;
+}
+
+h1 {
+	text-shadow: 8px 8px 8px #3366CC;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+	background-color: cyan;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#jq {
+	background-color: cyan;
+	width: 60%;
+	margin: auto;
+	padding: 10px;
+}
+
+
+.imgCenter {
+	display: block;
+	margin: auto;
+}
+
+#seqTable {
+	width: 70%;
+	margin: auto;
+	text-align: center;
+}
+td {
+	border: solid white 1px;
+}
+
+#download_h6 {
+	text-align: center;
+	font-size: 2.5em;
+	color: white;
+	background-color: cyan;
+}
+
+th {
+	background-color: cyan;
+	padding: 20px;
+	font-size: 2em;
+}
