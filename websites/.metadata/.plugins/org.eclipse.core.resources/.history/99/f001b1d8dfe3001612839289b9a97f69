@@ -1,0 +1,10 @@
+var ctx = document.getElementById("ctx").getContext("2d");
+
+ctx.font = '100px Arial';
+ctx.fillStyle = '#0000FF';
+ctx.globalAlpha = 0.5;
+
+ctx.fillText('Yes!', 150, 275);
+ctx.fillStyle = '#FF0000';
+ctx.fillRect(50, 50, 400, 400);
+ctx.clearRect(150, 150, 200, 200);

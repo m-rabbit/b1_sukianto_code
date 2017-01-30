@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Game Bouncing</title>
+		<style>
+			canvas {
+				border: 3px solid red;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Bouncing part of game - test / development page</h1>
+		<br>
+		<hr>
+		<br>
+		<canvas width="600" height="400" id="myCanvas"></canvas>
+		<script>
+			var canvas = document.getElementById("myCanvas");
+			var ctx = canvas.getContext("2d");
+
+			var x = 10;
+			var y = 10;
+			var w = 20;
+			var h = 30;
+
+			var stepSize = 2;
+			var blueZone,
+			    greenZone,
+			    purpleZone,
+			    redZone;
+
+			var update = function() {
+
+				var crossedRightLimit = x >= 570;
+				var crossedLeftLimit = x <= 10;
+
+				if (crossedRightLimit) {
+					x = 570;
+					stepSize = -stepSize;
+				} else if (crossedLeftLimit) {
+					x = 10;
+					stepSize = -stepSize;
+				}
+				;
+				x = x + stepSize;
+				blueZone = x > 0 && x < 100;
+				//boolean AND both must be true
+				greenZone = !blueZone && x < 200;
+				purpleZone = !greenZone && !blueZone && x < 300;
+				redZone = !blueZone && !greenZone && !purpleZone && x < 400;
+			};
+
+			var draw = function() {
+				ctx.clearRect(0, 0, 600, 400);
+				if (blueZone) {
+					ctx.fillStyle = "#0000FF";
+				} else if (greenZone) {
+					ctx.fillStyle = "#00FF00";
+				} 
+				else if(purpleZone) {
+					ctx.fillStyle = "rgb(200, 0, 200)";
+				}
+				else if(redZone) {
+					ctx.fillStyle = "#FF0000";
+				}
+				else {
+					ctx.fillStyle = "#000000";
+				}
+				ctx.fillRect(x, y, w, h);
+			}; //end of draw()
+
+			var step = function() {
+				update();
+				draw();
+
+				window.requestAnimationFrame(step);
+				//recursion
+			};
+
+			step();
+
+		</script>
+	</body>
+</html>

@@ -53,3 +53,7 @@ th {
 	padding: 20px;
 	font-size: 2em;
 }
+
+.bg {
+	background-color: gray;
+}

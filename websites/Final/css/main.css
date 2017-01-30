@@ -1,0 +1,37 @@
+body {
+	background-image: url("../sprites/sky.jpg");
+	font-family: 'Lobster', cursive;
+	background-size: cover;
+	text-align:center;
+}
+
+#head {
+	background-color: #CCCCCC;
+}
+h1 {
+	color: #00BCD4;
+	font-family: 'Lobster', cursive;
+}
+
+h2 {
+	color: #000000;
+	font-family: 'Lobster', cursive;
+}
+
+h3 {
+	color: #00FFFF;
+	font-family: 'Lobster', cursive;
+}
+
+#instructions {
+	position: fixed;
+    /* center the element */
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    /* give it dimensions */
+    min-height: 10em;
+    width: 900px;
+	background-color: #CCCCCC;
+}

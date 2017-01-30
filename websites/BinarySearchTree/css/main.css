@@ -1,0 +1,41 @@
+body {
+	text-align: center;
+	background-image: url("../images/binary.jpg");
+	background-size: cover;
+}
+
+h1 {
+	font-size: 50px;
+	color: white;
+	text-shadow: 5px 5px 5px blue;
+	font-family: 'Lobster', cursive;
+}
+
+h2 {
+	font-size: 40px;
+	color: white;
+	text-shadow: 5px 5px 5px blue;
+	font-family: 'Lobster', cursive;
+}
+
+.images {
+	border: white ridge 2px;
+	border-width: 10px;
+	background-color: white;
+}
+
+h4 {
+	font-size: 40px;
+	color: white;
+	text-shadow: 5px 5px 5px blue;
+	font-family: 'Lobster', cursive;
+}
+
+h5 {
+	color: white;
+	text-shadow: 3px 3px 3px blue;
+}
+
+#navbar {
+	background-color: #CFDBC5;
+}

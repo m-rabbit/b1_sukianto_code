@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Free Web tutorials">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="Thea S">
+		<title>Binary Search Tree</title>
+		<link rel="stylesheet" type="text/css" href="css/w3.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/instructions.js"></script>
+
+	</head>
+
+	<body>
+
+		<h1>How to Construct a Binary Search Tree (Click Me!)</h1>
+		<h2 id="name">by Thea S. CHS, November 2016</h2>
+		<h3>
+		<div>
+			<img class="images" src="images/bst.png" alt="bst">
+		</div></h3>
+
+		<br>
+		<hr>
+		<br>
+		
+		<ul class="w3-navbar w3-card-2 w3-pale-green">
+			<li>
+				<a href="../../index.html">Mr. M</a>
+			</li>
+
+			<li class="w3-dropdown-hover w3-hover-aqua">
+				<a class="w3-hover-cyan" href="#">Websites<i class="fa fa-caret-down"></i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="http://google.com">Google</a>
+					<a href="#">Add link here</a>
+					<a href="#">Add link here</a>
+				</div>
+			</li>
+
+			<li class="w3-dropdown-hover w3-hover-aqua">
+				<a class="w3-hover-cyan" href="#">CHS <i class="fa fa-caret-down"></i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="../nuge/index.html">Jonathon N</a>
+					<a href="../dans/index.html">Dallin D</a>
+					<a href="../lars/index.html">Ben L</a>
+					<a href="../wa/index.html">Logan W</a>
+					<a href="../suki/index.html">Thea S</a>
+					<a href="../flet/index.html">Porter F</a>
+					<a href="../sche/index.html">Zachary S</a>
+				</div>
+			</li>
+
+			<li class="w3-dropdown-hover w3-hover-aqua">
+				<a class="w3-hover-cyan" href="#">EHS <i class="fa fa-caret-down"></i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="../hous/index.html">John H</a>
+					<a href="../helm/index.html">Tanner H</a>
+				</div>
+			</li>
+
+			<li class="w3-dropdown-hover w3-hover-aqua">
+				<a class="w3-hover-cyan" href="#">MVHS <i class="fa fa-caret-down"></i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="../powe/index.html">Mason P</a>
+					<a href="../moor/index.html">Joseph M</a>
+					<a href="../kosk/index.html">Chase KD</a>
+					<a href="../bens/index.html">Gavin B</a>
+					<a href="../fern/index.html">Justin F</a>
+					<a href="../gron/index.html">Ethan G</a>
+					<a href="../hoag/index.html">Austin H</a>
+				</div>
+			</li>
+
+			<li class="w3-dropdown-hover w3-hover-aqua">
+				<a class="w3-hover-cyan" href="#">MHS <i class="fa fa-caret-down"></i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="../tra/index.html">Kien T</a>
+				</div>
+			</li>
+
+			<li class="w3-dropdown-hover w3-hover-aqua">
+				<a class="w3-hover-cyan" href="#">RMHS <i class="fa fa-caret-down"></i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="../clev/index.html">Michael C</a>
+					<a href="../alv/index.html">Ethan A</a>
+					<a href="../clem/index.html">Alyse C</a>
+					<a href="../ne/index.html">Kyle N</a>
+					<a href="../tipp/index.html">Kyle T</a>
+				</div>
+			</li>
+
+		</ul>
+		
+
+		<br>
+		<hr>
+		<br>
+		
+		<h2 id ="title1">Basic Binary Search Tree</h2>
+		
+		
+		<h4>Interactive BST Building (Click Me!)</h4>
+		
+		<img id="picture" src="images/set.png" alt="set.png">
+		<h2 id="picturetext">Step 1: Find a set of data.</h2>
+		
+		<form>
+			<input type="text" id="txtn1" name="n1" value="Minimum">
+			<input type="text" id="txtn2" name="n2" value="Maximum">
+			<input id="btnrandom" type="button" value="addition">
+			<input id="btnclear" type="button" value="clear">
+			<input id="result" type="text" value="result">
+		</form>
+		
+		
+	</body>
+</html>

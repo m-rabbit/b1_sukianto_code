@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JavaScript Game 2</title>
+		<style>
+			canvas {
+				border: 3px solid red;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>JavaScript Game 2</h1>
+		<h2>Created by Thea S. / Jan 2017</h2>
+
+
+	
+		<canvas id="myCanvas" width="500" height="500"></canvas>
+		<script src="js/game.js">
+		</script>
+	</body>
+</html>

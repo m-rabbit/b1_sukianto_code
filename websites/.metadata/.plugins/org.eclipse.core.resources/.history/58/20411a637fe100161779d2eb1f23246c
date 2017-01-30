@@ -1,0 +1,4 @@
+body {
+	background-image: url("sprites/sky.jpg");
+	text-align:center;
+}

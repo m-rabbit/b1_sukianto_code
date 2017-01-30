@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;JavaScript.WhileLoops&apos; to &apos;BouncingBoxds&apos;" description="Rename resource &apos;JavaScript.WhileLoops&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/JavaScript.WhileLoops" name="BouncingBoxds" stamp="1484233050434" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;BouncingBoxds&apos; to &apos;BouncingBoxes&apos;" description="Rename resource &apos;BouncingBoxds&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/BouncingBoxds" name="BouncingBoxes" stamp="1484233059796" updateReferences="true"/>
+</session>
