@@ -1,0 +1,27 @@
+var ctx = document.getElementById("ctx").getContext("2d");
+
+var x = 50;
+var spdX = 30;
+var y = 40;
+var spdY = 20;
+
+ctx.font = '30px Arial';
+ctx.fillStyle = "#FF0000";
+//ctx.fillText('P', x, y);
+
+function update() {
+	x += spdX;
+	y += spdY;
+	if(x >= 470 || x <= 30) {
+		spdX *= -1;
+	}
+	if(y >= 500 || y <= 30) {
+		spdY *= -1;
+	}
+	ctx.clearRect(0, 0, 500, 500);
+	ctx.fillText('P', x, y);
+	//console.log('I am inside update: x = ',x,' y = ',y);
+}
+
+//update();
+setInterval(update,100);

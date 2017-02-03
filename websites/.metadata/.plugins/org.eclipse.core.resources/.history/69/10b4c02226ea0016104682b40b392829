@@ -1,0 +1,89 @@
+var ctx = document.getElementById("ctx").getContext("2d");
+
+// player
+var player = {
+	x: 50,
+	spdX: 15*Math.random(),
+	y: 40,
+	spdY: 12*Math.random(),
+	name: "P",
+	myFont: '30px Arial',
+	color: "#FF0000"
+};
+
+//enemy
+var enemy = {
+	x: 70,
+	spdX: 15*Math.random(),
+	y: 40,
+	spdY: 12*Math.random(),
+	name: "E",
+	myFont: '30px Arial',
+	color: "#FF0000"
+};
+
+
+var gameHeight = 500;
+var gameWidth = 500;
+var rightSpacing = 75;
+var topSpacing = 25;
+
+
+//ctx.fillText('P', x, y);
+
+function playerUpdate() {
+	var red =  Math.floor(Math.random() * (255 - 0));
+	var green = Math.floor(Math.random() * (255 - 0));
+	var blue = Math.floor(Math.random() * (255 - 0));
+	
+	//player
+	player.x += player.spdX;
+	player.y += player.spdY;
+	if(player.x >= gameWidth-rightSpacing || player.x <= 10) {
+		//spdX = -spdX;
+		//spdX = spdX*-1;
+		player.spdX *= -1;
+		player.color = "rgb(" + red + "," + green + "," + blue + ")";
+	}
+	if(player.y >= gameHeight || player.y <= topSpacing) {
+		player.spdY *= -1;
+		player.color = "rgb(" + red + "," + green + "," + blue + ")";
+	}
+	
+	
+	ctx.clearRect(0, 0, gameWidth, gameHeight);
+	
+	ctx.font = player.myFont;
+	ctx.fillStyle = player.color;
+	ctx.fillText(player.name, player.x, player.y);
+	//console.log('I am inside update: x = ',x,' y = ',y);
+}; //end of update
+
+function enemyUpdate() {
+	var enemy_red =  Math.floor(Math.random() * (255 - 0));
+	var enemy_green = Math.floor(Math.random() * (255 - 0));
+	var enemy_blue = Math.floor(Math.random() * (255 - 0));
+	
+	enemy.x += enemy.spdX;
+	enemy.y += enemy.spdY;
+	if(enemy.x >= gameWidth-rightSpacing || enemy.x <= 10) {
+		//spdX = -spdX;
+		//spdX = spdX*-1;
+		enemy.spdX *= -1;
+		enemy.color = "rgb(" + enemy_red + "," + enemy_green + "," + enemy_blue + ")";
+	}
+	if(enemy.y >= gameHeight || enemy.y <= topSpacing) {
+		enemy.spdY *= -1;
+		enemy.color = "rgb(" + enemy_red + "," + enemy_green + "," + enemy_blue + ")";
+	}
+	
+	ctx.clearRect(0, 0, gameWidth, gameHeight);
+	
+	ctx.font = enemy.myFont;
+	ctx.fillStyle = enemy.color;	
+	ctx.fillText(enemy.name, enemy.x, enemy.y);
+};
+
+//update();
+setInterval(playerUpdate,50);
+setInterval(enemyUpdate,50);

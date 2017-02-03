@@ -1,0 +1,27 @@
+var ctx = document.getElementById("ctx").getContext("2d");
+
+var x = 50;
+var spdX = 15*Math.random();
+var y = 40;
+var spdY = 12*Math.random();
+
+ctx.font = '30px Arial';
+ctx.fillStyle = "#FF0000";
+//ctx.fillText('P', x, y);
+
+function update() {
+	x += spdX;
+	y += spdY;
+	if(x >= 425 || x <= 5) {
+		spdX *= -1;
+	}
+	if(y >= 500 || y <= 25) {
+		spdY *= -1;
+	}
+	ctx.clearRect(0, 0, 500, 500);
+	ctx.fillText('Thea', x, y);
+	//console.log('I am inside update: x = ',x,' y = ',y);
+}
+
+//update();
+setInterval(update,50);

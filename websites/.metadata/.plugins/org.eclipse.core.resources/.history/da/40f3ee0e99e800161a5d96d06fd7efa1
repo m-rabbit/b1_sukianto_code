@@ -1,0 +1,67 @@
+var ctx = document.getElementById("ctx").getContext("2d");
+
+// player
+var player_x = 50;
+var player_spdX = 15*Math.random();
+var player_y = 40;
+var player_spdY = 12*Math.random();
+var player_name = "P";
+ctx.font = '30px Arial';
+ctx.fillStyle = "#FF0000";
+
+//enemy
+var enemy_x = 70;
+var enemy_spdX = 15*Math.random();
+var enemy_y = 40;
+var enemy_spdY = 12*Math.random();
+var enemy_name = "E";
+ctx.font = '30px Arial';
+ctx.fillStyle = "#FF0000";
+
+var gameHeight = 500;
+var gameWidth = 500;
+var rightSpacing = 75;
+var topSpacing = 25;
+
+
+//ctx.fillText('P', x, y);
+
+function update() {
+	//player
+	player_x += player_spdX;
+	player_y += player_spdY;
+	var red =  Math.floor(Math.random() * (255 - 0));
+	var green = Math.floor(Math.random() * (255 - 0));
+	var blue = Math.floor(Math.random() * (255 - 0));
+	if(player_x >= gameWidth-rightSpacing || player_x <= 10) {
+		//spdX = -spdX;
+		//spdX = spdX*-1;
+		player_spdX *= -1;
+		ctx.fillStyle = "rgb(" + red + "," + green + "," + blue + ")";
+	}
+	if(player_y >= gameHeight || player_y <= topSpacing) {
+		player_spdY *= -1;
+		ctx.fillStyle = "rgb(" + red + "," + green + "," + blue + ")";
+	}
+	
+	enemy_x += enemy_spdX;
+	enemy_y += enemy_spdY;
+	if(enemy_x >= gameWidth-rightSpacing || enemy_x <= 10) {
+		//spdX = -spdX;
+		//spdX = spdX*-1;
+		player_spdX *= -1;
+		ctx.fillStyle = "rgb(" + red + "," + green + "," + blue + ")";
+	}
+	if(enemy_y >= gameHeight || enemy__y <= topSpacing) {
+		player_spdY *= -1;
+		ctx.fillStyle = "rgb(" + red + "," + green + "," + blue + ")";
+	}
+	
+	ctx.clearRect(0, 0, gameWidth, gameHeight);
+	ctx.fillText(player_name, player_x, player_y);
+	ctx.fillText(enemy_name, enemy_x, enemy_y);
+	//console.log('I am inside update: x = ',x,' y = ',y);
+} //end of update
+
+//update();
+setInterval(update,50);

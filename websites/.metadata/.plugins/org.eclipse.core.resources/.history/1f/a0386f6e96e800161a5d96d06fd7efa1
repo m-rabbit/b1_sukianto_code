@@ -1,0 +1,48 @@
+var ctx = document.getElementById("ctx").getContext("2d");
+
+// player
+var x = 50;
+var spdX = 15*Math.random();
+var y = 40;
+var spdY = 12*Math.random();
+var name = "P";
+
+//enemy
+var enemy_x = 50;
+var enemy_spdX = 15*Math.random();
+var enemy_y = 40;
+var enemy_spdY = 12*Math.random();
+var enemy_name = "P";
+
+var gameHeight = 500;
+var gameWidth = 500;
+var rightSpacing = 75;
+var topSpacing = 25;
+
+ctx.font = '30px Arial';
+ctx.fillStyle = "#FF0000";
+//ctx.fillText('P', x, y);
+
+function update() {
+	x += spdX;
+	y += spdY;
+	var red = Math.random()*255;
+	var green = Math.random()*255;
+	var blue = Math.random()*255;
+	if(x >= gameWidth-rightSpacing || x <= 10) {
+		//spdX = -spdX;
+		//spdX = spdX*-1;
+		spdX *= -1;
+		ctx.fillStyle = "rgb(red, green, blue)";
+	}
+	if(y >= gameHeight || y <= topSpacing) {
+		spdY *= -1;
+		ctx.fillStyle = "rgb(" + red + "," + green + "," + blue + ")";
+	}
+	ctx.clearRect(0, 0, gameWidth, gameHeight);
+	ctx.fillText(name, x, y);
+	//console.log('I am inside update: x = ',x,' y = ',y);
+}
+
+//update();
+setInterval(update,50);
