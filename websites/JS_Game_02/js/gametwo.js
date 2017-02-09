@@ -6,27 +6,37 @@ var player = {
 	spdX: 15*Math.random(),
 	y: 40,
 	spdY: 12*Math.random(),
-	name: "P",
-	myFont: '30px Arial',
+	w: 50,
+	h: 50,
 	color: "#FF0000"
 };
 
 //enemy
-var enemy = {
+var enemy1 = {
 	x: 70,
 	spdX: 15*Math.random(),
 	y: 40,
 	spdY: 12*Math.random(),
-	name: "E",
+	w: 100,
+	h: 50,
 	myFont: '30px Arial',
+	color: "#FF0000"
+};
+
+var enemy2 = {
+	x: 70,
+	spdX: 15*Math.random(),
+	y: 40,
+	spdY: 12*Math.random(),
+	w: 50,
+	h: 100,
 	color: "#FF0000"
 };
 
 
 var gameHeight = 500;
 var gameWidth = 500;
-var rightSpacing = 75;
-var topSpacing = 25;
+var topSpacing = 0;
 
 
 //ctx.fillText('P', x, y);
@@ -39,20 +49,20 @@ function entityUpdate(entity) {
 	//player
 	entity.x += entity.spdX;
 	entity.y += entity.spdY;
-	if(entity.x >= gameWidth-rightSpacing || entity.x <= 10) {
+	if(entity.x >= gameWidth-entity.w || entity.x <= 0) {
 		//spdX = -spdX;
 		//spdX = spdX*-1;
 		entity.spdX *= -1;
-		entity.color = "rgb(" + red + "," + green + "," + blue + ")";
+		entity.color = "rgba(" + red + "," + green + "," + blue + ",0.5)";
 	}
-	if(entity.y >= gameHeight || entity.y <= topSpacing) {
+	if(entity.y >= gameHeight-entity.h || entity.y <= topSpacing) {
 		entity.spdY *= -1;
-		entity.color = "rgb(" + red + "," + green + "," + blue + ")";
+		entity.color = "rgba(" + red + "," + green + "," + blue + ",0.5)";
 	}
 	
 	ctx.font = entity.myFont;
 	ctx.fillStyle = entity.color;
-	ctx.fillText(entity.name, entity.x, entity.y);
+	ctx.fillRect(entity.x, entity.y, entity.w, entity.h);
 	//console.log('I am inside update: x = ',x,' y = ',y);
 }; //end of update
 
@@ -60,7 +70,8 @@ function entityUpdate(entity) {
 function update() {
 	ctx.clearRect(0,0,gameWidth,gameHeight);
 	entityUpdate(player);
-	entityUpdate(enemy);
+	entityUpdate(enemy1);
+	entityUpdate(enemy2);
 };
 
 
