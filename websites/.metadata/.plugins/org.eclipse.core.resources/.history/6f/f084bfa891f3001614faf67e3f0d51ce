@@ -1,0 +1,108 @@
+var ctx = document.getElementById("ctx").getContext("2d");
+
+// player
+var player = {
+	x: 50,
+	spdX: 15*Math.random(),
+	y: 40,
+	spdY: 12*Math.random(),
+	w: 50,
+	h: 50,
+	color: "#FF0000"
+};
+
+var enemyList = {};
+
+getDistanceBetweenEntity = function (entity1,entity2){
+	var dx = entity1.x - entity2.x;
+	var dy = entity1.y - entity2.y;
+	return Math.sqrt(dx*dx + dy*dy);
+	
+};
+
+testCollisionEntity = function (entity1,entity2){
+	
+	var distance = getDistanceBetweenEntity(entity1,entity2);
+	return distance < 50;
+	
+};
+
+
+Enemy("EO1",70,40,15*Math.random(),12*Math.random(), "EO1", "30px Arial", "60px Arial", "#000000");
+Enemy("EO2",70,40,15*Math.random(),12*Math.random(), "EO2", "40px Arial", "30px Arial", "#FF0000");
+Enemy("EO3",70,40,15*Math.random(),12*Math.random(), "E03", "50px Arial", "80px Arial", "#00FF00");
+
+
+function Enemy(id, passX, passY, spdX, spdY, name, font, wallFont, topBottomFont, color) {
+	var enemy = {
+		id: id,
+		x: passX,
+		spdX: spdX,
+		y: passY,
+		spdY: spdY,
+		name: name,
+		font: font,
+		wallFont: wallFont,
+		topBottomFont: topBottomFont,
+		color: color
+	};
+	enemyList[id] = enemy;
+}; // end of constructor
+
+
+var gameHeight = 500;
+var gameWidth = 500;
+var topSpacing = 0;
+
+
+//ctx.fillText('P', x, y);
+
+function updateEntity(entity) {
+	var red =  Math.floor(Math.random() * (255 - 0));
+	var green = Math.floor(Math.random() * (255 - 0));
+	var blue = Math.floor(Math.random() * (255 - 0));
+	
+	//player
+	entity.x += entity.spdX;
+	entity.y += entity.spdY;
+	if(entity.x >= gameWidth-entity.w || entity.x <= 0) {
+		//spdX = -spdX;
+		//spdX = spdX*-1;
+		entity.spdX *= -1;
+		entity.color = "rgba(" + red + "," + green + "," + blue + ",0.5)";
+	}
+	if(entity.y >= gameHeight-entity.h || entity.y <= topSpacing) {
+		entity.spdY *= -1;
+		entity.color = "rgba(" + red + "," + green + "," + blue + ",0.5)";
+	}
+	
+	ctx.font = entity.myFont;
+	ctx.fillStyle = entity.color;
+	ctx.fillRect(entity.x, entity.y, entity.w, entity.h);
+	//console.log('I am inside update: x = ',x,' y = ',y);
+}; //end of update
+
+drawEntity = function(something){
+	ctx.font = something.font;
+	ctx.fillStyle = something.color;
+	ctx.fillText(something.name, something.x, something.y);	
+};
+
+function update() {
+	ctx.clearRect(0,0,gameWidth,gameHeight);
+	updateEntity(player);
+	
+	for (var key in enemyList) {
+		updateEntity(enemyList[key]);
+		//test for collision
+		var isColliding = testCollisionEntity(player,enemyList[key]);
+		if (isColliding){
+			console.log('Colliding'); // game keeps running
+			//alert('Collision!!!');
+		} // end of if
+	} // end of for
+};
+
+
+setInterval(update,50);
+
