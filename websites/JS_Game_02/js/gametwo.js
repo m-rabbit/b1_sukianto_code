@@ -1,6 +1,6 @@
 var ctx = document.getElementById("ctx").getContext("2d");
 
-var ctxWidth = 500;
+var ctxWidth = 900;
 var ctxHeight = 500;
 var rtSpacing = 30;
 var bottomSpacing = 10;
@@ -35,26 +35,31 @@ var player = {
 // end of player
 
 // this is a "Constructor"
-Enemy = function(id, passX, passY, spdX, spdY, passName, passFont, passWallFont, passTopBottomFont, passColor, passColorWall, passColorTopBottom) {
+Enemy = function(id, passX, passY, passName, passFont, passWallFont, passTopBottomFont, passColor) {
 
 	var enemy = {
 		id : id,
 		x : passX,
-		spdX : spdX,
+		spdX : getRandomIntInclusive(1, 200),
 		y : passY,
-		spdY : spdY,
+		spdY : getRandomIntInclusive(1, 200),
 		name : passName,
 		font : passFont,
 		wallFont : passWallFont,
 		topBottomFont : passTopBottomFont,
 		color : passColor,
-		colorWall : passColorWall,
-		colorTopBottom : passColorTopBottom
 	};
 
 	enemyList[id] = enemy;
 
 };
+
+function getRandomIntInclusive(min, max) {
+	min = Math.ceil(min);
+	max = Math.floor(max);
+	return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 // end of Enemy() constructor
 
 getDistanceBetweenEntity = function(entity1, entity2) {
@@ -84,20 +89,24 @@ updateEntity = function(something) {
 };
 
 updateEntityPosition = function(something) {
+	var red = getRandomIntInclusive(0, 255);
+	var green = getRandomIntInclusive(0, 255);
+	var blue = getRandomIntInclusive(0, 255);
+
 	something.x += something.spdX;
 	something.y += something.spdY;
 
 	//flips spdX if we hit either the left or the right sides
 	if (something.x >= ctxWidth - rtSpacing || something.x <= 0) {// right side OR left side
 		something.spdX *= -1;
-		something.color = something.colorWall;
+		something.color = "rgb(" + red + "," + green + "," + blue + ")";
 		something.font = something.wallFont;
 	}
 
 	// flip spdY if we hit either the ceiling OR the floor
 	if (something.y >= ctxHeight - bottomSpacing || something.y <= topSpacing) {// || is a Boolean for "OR"
 		something.spdY *= -1;
-		something.color = something.colorTopBottom;
+		something.color = "rgb(" + red + "," + green + "," + blue + ")";
 		something.font = something.topBottomFont;
 	}
 };
@@ -113,21 +122,30 @@ update = function() {
 	//updateEntity(player);
 
 	drawEntity(player);
-	for (var i in enemyList) {
-		updateEntity(enemyList[i]);
-
-		var isColliding = testCollisionEntity(player, enemyList[i]);
-		if (isColliding) {
-			player.highPoints--;
-			//console.log("Collision!");
-			if(player.highPoints < 0) {
-				var timeSurvived = Date.now() - timeWhenGameStarted;
-				alert("Game Over! time = " + timeSurvived/1000 + " s");
-				player.highPoints = 10;
-				timeWhenGameStarted = Date.now();
-			}
+	var timeSurvived = Date.now() - timeWhenGameStarted;
+	if (timeSurvived >= 3000) {
+		ctx.fillStyle = 'green';
+		ctx.fillRect(850, 100, 50, 300);
+		if(player.x >= 850 && player.y >= 100) {
+			alert("You Win!");
+			player.highPoints = 10;
+			timeWhenGameStarted = Date.now();
 		}
-	};
+		for (var i in enemyList) {
+			updateEntity(enemyList[i]);
+
+			var isColliding = testCollisionEntity(player, enemyList[i]);
+			if (isColliding) {
+				player.highPoints--;
+				//console.log("Collision!");
+				if (player.highPoints < 0) {
+					alert("Game Over! time = " + timeSurvived / 1000 + " s");
+					player.highPoints = 10;
+					timeWhenGameStarted = Date.now();
+				}
+			}
+		};
+	}
 
 	ctx.font = "30px Arial";
 	ctx.fillStyle = "#FF0000";
@@ -135,16 +153,20 @@ update = function() {
 	var currentTime = Date.now() - timeWhenGameStarted;
 	ctx.font = "30px Arial";
 	ctx.fillStyle = "#FF0000";
-	ctx.fillText("Time Survived: " + currentTime/1000 + " s", 10, 70);
+	ctx.fillText("Time Survived: " + currentTime / 1000 + " s", 10, 70);
 
 };
 // end of update()
 
-Enemy('E1', 70, 60, 2, 5, 'E01', '30px Arial', '60px Arial', '10px Arial', myBlack, grassGreen, appleRed);
+Enemy('E1', 70, 60, 'E01', '30px Arial', '60px Arial', '10px Arial', grassGreen);
 
-Enemy('E2', 80, 50, 3, 4, 'E02', '60px Arial', '30px Arial', '15px Arial', grassGreen, myBlack, appleRed);
+Enemy('E2', 80, 50, 'E02', '60px Arial', '30px Arial', '15px Arial', grassGreen);
 
-Enemy('E3', 75, 50, 3, 7, 'E03', '20px Arial', '80px Arial', '20px Arial', appleRed, grassGreen, myBlack);
+Enemy('E3', 75, 50, 'E03', '20px Arial', '80px Arial', '20px Arial', grassGreen);
+
+Enemy('E4', 70, 60, 'E04', '30px Arial', '60px Arial', '10px Arial', grassGreen);
+
+Enemy('E5', 80, 50, 'E05', '60px Arial', '30px Arial', '15px Arial', grassGreen);
 
 setInterval(update, 100);
 
