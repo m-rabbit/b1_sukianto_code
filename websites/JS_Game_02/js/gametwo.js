@@ -19,9 +19,9 @@ var timeWhenGameStarted = Date.now();
 
 // player as an object
 var player = {
-	x : 300,
+	x : 30,
 	spdX : 3,
-	y : 300,
+	y : 250,
 	spdY : 7,
 	name : "P",
 	font : '30px Arial',
@@ -30,12 +30,14 @@ var player = {
 	color : myPink,
 	colorWall : appleRed,
 	colorTopBottom : skyBlue,
-	highPoints : 10
+	highPoints : 10,
+	w: 30,
+	h: 30
 };
 // end of player
 
 // this is a "Constructor"
-Enemy = function(id, passX, passY, passName, passFont, passWallFont, passTopBottomFont, passColor) {
+Enemy = function(id, passX, passY, passName, passFont, passWallFont, passTopBottomFont, passColor, passWidth, passHeight) {
 
 	var enemy = {
 		id : id,
@@ -48,6 +50,8 @@ Enemy = function(id, passX, passY, passName, passFont, passWallFont, passTopBott
 		wallFont : passWallFont,
 		topBottomFont : passTopBottomFont,
 		color : passColor,
+		w: passWidth,
+		h: passHeight
 	};
 
 	enemyList[id] = enemy;
@@ -69,11 +73,28 @@ getDistanceBetweenEntity = function(entity1, entity2) {
 
 };
 
+testCollisionRectRect = function(rect1, rect2) {
+	return rect1.x <= rect2.x + rect2.width
+	&& rect2.x <= rect1.x + rect1.width
+	&& rect1.y <= rect2.y + rect2.height
+	&& rect2.y <= rect1.y + rect1.height;
+};
+
 testCollisionEntity = function(entity1, entity2) {
-
-	var distance = getDistanceBetweenEntity(entity1, entity2);
-	return distance < 50;
-
+	var rect1 = {
+		x: entity1.x,
+		y: entity1.y,
+		width: entity1.w,
+		height: entity1.h
+	};
+	
+	var rect2 = {
+		x: entity2.x,
+		y: entity2.y,
+		width: entity2.w,
+		height: entity2.h
+	};
+	return testCollisionRectRect(rect1, rect2);
 };
 
 document.onmousemove = function(mouse) {
@@ -85,7 +106,7 @@ document.onmousemove = function(mouse) {
 };
 updateEntity = function(something) {
 	updateEntityPosition(something);
-	drawEntity(something);
+	drawEnemy(something);
 };
 
 updateEntityPosition = function(something) {
@@ -97,7 +118,7 @@ updateEntityPosition = function(something) {
 	something.y += something.spdY;
 
 	//flips spdX if we hit either the left or the right sides
-	if (something.x >= ctxWidth - rtSpacing || something.x <= 0) {// right side OR left side
+	if (something.x >= ctxWidth - something.w  || something.x <= 0 - something.w) {// right side OR left side
 		something.spdX *= -1;
 		something.color = "rgb(" + red + "," + green + "," + blue + ")";
 		something.font = something.wallFont;
@@ -111,22 +132,35 @@ updateEntityPosition = function(something) {
 	}
 };
 
-drawEntity = function(something) {
+drawPlayer = function(something) {
+	ctx.save();
 	ctx.font = something.font;
 	ctx.fillStyle = something.color;
-	ctx.fillText(something.name, something.x, something.y);
+	//ctx.fillText(something.name, something.x, something.y);
+	ctx.fillRect(something.x-something.w/2,something.y-something.h/2,something.w,something.h);
+	ctx.restore();
+};
+
+drawEnemy = function(something) {
+	ctx.save();
+	ctx.font = something.font;
+	ctx.fillStyle = something.color;
+	//ctx.fillText(something.name, something.x, something.y);
+	//ctx.fillRect(something.x,something.y,something.w,something.h);
+	ctx.fillRect(something.x-something.w/2,something.y-something.h/2,something.w,something.h);
+	ctx.restore();
 };
 
 update = function() {
 	ctx.clearRect(0, 0, ctxWidth, ctxHeight);
 	//updateEntity(player);
 
-	drawEntity(player);
+	drawPlayer(player);
 	var timeSurvived = Date.now() - timeWhenGameStarted;
 	if (timeSurvived >= 3000) {
-		ctx.fillStyle = 'green';
+		ctx.fillStyle = "rgba(0, 255, 0, 0.5)";
 		ctx.fillRect(850, 100, 50, 300);
-		if(player.x >= 850 && player.y >= 100) {
+		if(player.x >= 870 && player.y >= 100) {
 			alert("You Win!");
 			player.highPoints = 10;
 			timeWhenGameStarted = Date.now();
@@ -149,7 +183,7 @@ update = function() {
 
 	ctx.font = "30px Arial";
 	ctx.fillStyle = "#FF0000";
-	ctx.fillText("Points: " + player.highPoints, 10, 30);
+	ctx.fillText("Health Points: " + player.highPoints, 10, 30);
 	var currentTime = Date.now() - timeWhenGameStarted;
 	ctx.font = "30px Arial";
 	ctx.fillStyle = "#FF0000";
@@ -158,15 +192,15 @@ update = function() {
 };
 // end of update()
 
-Enemy('E1', 70, 60, 'E01', '30px Arial', '60px Arial', '10px Arial', grassGreen);
+Enemy('E1', 70, 60, 'E01', '30px Arial', '60px Arial', '10px Arial', grassGreen,30,30);
 
-Enemy('E2', 80, 50, 'E02', '60px Arial', '30px Arial', '15px Arial', grassGreen);
+Enemy('E2', 80, 50, 'E02', '60px Arial', '30px Arial', '15px Arial', grassGreen,30,60);
 
-Enemy('E3', 75, 50, 'E03', '20px Arial', '80px Arial', '20px Arial', grassGreen);
+Enemy('E3', 75, 50, 'E03', '20px Arial', '80px Arial', '20px Arial', grassGreen,30,30);
 
-Enemy('E4', 70, 60, 'E04', '30px Arial', '60px Arial', '10px Arial', grassGreen);
+Enemy('E4', 70, 60, 'E04', '30px Arial', '60px Arial', '10px Arial', grassGreen,30,60);
 
-Enemy('E5', 80, 50, 'E05', '60px Arial', '30px Arial', '15px Arial', grassGreen);
+Enemy('E5', 80, 50, 'E05', '60px Arial', '30px Arial', '15px Arial', grassGreen,30,30);
 
 setInterval(update, 100);
 
