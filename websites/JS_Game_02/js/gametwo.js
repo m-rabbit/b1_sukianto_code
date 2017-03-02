@@ -5,6 +5,7 @@ var ctxHeight = 500;
 var rtSpacing = 30;
 var bottomSpacing = 10;
 var topSpacing = 30;
+var nameOfUser = "anon";
 
 var appleRed = "#FF0000";
 var skyBlue = "#0000FF";
@@ -66,6 +67,41 @@ function getRandomIntInclusive(min, max) {
 
 // end of Enemy() constructor
 
+function addUserName() {
+	//var message;
+	
+	nameOfUser = document.getElementById("userName").value;
+	//message = "User name has been entered as " + nameOfUser;
+	//document.getElementById("showUserName").innerHTML = message;
+	
+	ctx.font = "20px Arial";
+	ctx.fillStyle = "#FF0000";
+	ctx.fillText("Player: " + nameOfUser, 20, 250);
+}
+
+function getStartingHP() {
+	player.highPoints = document.getElementById("startingHP").value;
+	//message = "User name has been entered as " + nameOfUser;
+	//document.getElementById("showUserName").innerHTML = message;
+}
+
+function updateCanvasWidth() {
+	var message;
+	
+	var gameWidth = document.getElementById("inputCanvasWidth").value;
+
+	if(isNaN(gameWidth) || gameWidth < 500 || gameWidth > 900) {
+		message = "Input not valid, you entered " + gameWidth;
+		alert(message);
+	}
+	else {
+		message = "Valid input! Setting canvas width to " + gameWidth;
+		alert(message);
+		document.getElementById("ctx").width = gameWidth;
+		ctxWidth = gameWidth;
+	}
+}
+
 getDistanceBetweenEntity = function(entity1, entity2) {
 	var dx = entity1.x - entity2.x;
 	var dy = entity1.y - entity2.y;
@@ -102,7 +138,7 @@ document.onmousemove = function(mouse) {
 	var mouseY = mouse.clientY;
 	console.log("mouse x,y: " + mouseX + "," + mouseY);
 	player.x = mouseX - 12;
-	player.y = mouseY - 125;
+	player.y = mouseY - 400;
 };
 updateEntity = function(something) {
 	updateEntityPosition(something);
@@ -151,16 +187,25 @@ drawEnemy = function(something) {
 	ctx.restore();
 };
 
+drawUserName = function(something) {
+	ctx.font = "20px Arial";
+	ctx.fillStyle = "#FF0000";
+	ctx.fillText("Player: " + nameOfUser, 20, ctxHeight-50);
+	
+};
+
 update = function() {
 	ctx.clearRect(0, 0, ctxWidth, ctxHeight);
 	//updateEntity(player);
 
 	drawPlayer(player);
+	drawUserName();
+	
 	var timeSurvived = Date.now() - timeWhenGameStarted;
 	if (timeSurvived >= 3000) {
 		ctx.fillStyle = "rgba(0, 255, 0, 0.5)";
-		ctx.fillRect(850, 100, 50, 300);
-		if(player.x >= 870 && player.y >= 100) {
+		ctx.fillRect(ctxWidth-50, 100, 50, 300);
+		if(player.x >= ctxWidth-30 && player.y >= 100) {
 			alert("You Win!");
 			player.highPoints = 10;
 			timeWhenGameStarted = Date.now();

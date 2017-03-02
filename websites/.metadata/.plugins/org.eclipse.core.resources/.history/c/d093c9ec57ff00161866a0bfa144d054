@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JavaScript Game 2</title>
+		<style>
+			body {
+				background-color: #00FFFF;
+			}
+			canvas {
+				border: 3px solid blue;
+				background-color: #000000;
+			}
+			.button01 {
+				background-color: #00FF00;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>JavaScript Game 2</h1>
+		<h2>Created by Thea S. / Jan 2017</h2>
+		
+		<p>Please enter your user name.</p>
+		
+		Input Username: <input id="userName" type="text">
+		<button type="button" class="button01" onclick="addUserName()">Submit Username</button>
+		<h2 id="showUserName"></h2>
+		
+		Input Starting HP: <input id="startingHP" type="text">
+		<button type="button" class="button01" onclick="getStartingHP()">Submit Starting HP</button>
+		<h2 id="showUserName"></h2>
+		<br>
+		<hr>
+		<br>
+	
+		<canvas id="ctx" width="900" height="500"></canvas>
+		<script src="js/gametwo.js">
+		</script>
+	</body>
+</html>
