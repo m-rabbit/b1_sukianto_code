@@ -42,8 +42,7 @@
 						grandTotal += Math.ceil(orderForm.line_sum[i].value * 1000) / 1000;
 					}
 					grandTotal = Math.round(grandTotal * 100) / 100;
-					grandTotal = accounting.formatMoney(grandTotal);
-					orderForm.grand_total.value = grandTotal;
+					orderForm.grand_total.value = "$ " + grandTotal;
 					decimal(orderForm);
 				}
 			}

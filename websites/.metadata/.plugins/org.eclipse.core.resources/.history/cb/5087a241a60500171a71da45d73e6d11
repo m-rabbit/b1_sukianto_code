@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>My Order Form</title>
-		<script src="js/accounting.min.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
 		<style>
@@ -26,9 +25,9 @@
 		
 			function count(orderForm, lineNumber, itemCost) {
 				orderForm.line_sum[lineNumber].value = orderForm.line[lineNumber].value * itemCost;
-				//orderForm.line_sum[lineNumber].value = Math.ceil(orderForm.line_sum[lineNumber].value * 1000) / 1000;
-				//orderForm.line_sum[lineNumber].value = Math.floor(orderForm.line_sum[lineNumber].value * 1000) / 1000;
-				//orderForm.line_sum[lineNumber].value = Math.round(orderForm.line_sum[lineNumber].value * 100) / 100;
+				orderForm.line_sum[lineNumber].value = Math.ceil(orderForm.line_sum[lineNumber].value * 1000) / 1000;
+				orderForm.line_sum[lineNumber].value = Math.floor(orderForm.line_sum[lineNumber].value * 1000) / 1000;
+				orderForm.line_sum[lineNumber].value = Math.round(orderForm.line_sum[lineNumber].value * 100) / 100;
 				if (orderForm.line_sum[lineNumber].value == "NaN") {
 					alert("Error:\nYou may only enter numbers...\nPlease retry");
 					orderForm.line[lineNumber].value = orderForm.line[lineNumber].value.substring(0, orderForm.line[lineNumber].value.length - 1);
@@ -41,9 +40,8 @@
 					for ( i = 0; i < orderForm.line_sum.length; i++) {
 						grandTotal += Math.ceil(orderForm.line_sum[i].value * 1000) / 1000;
 					}
-					grandTotal = Math.round(grandTotal * 100) / 100;
-					grandTotal = accounting.formatMoney(grandTotal);
-					orderForm.grand_total.value = grandTotal;
+					grandTotal = Math.round(grandTotal * 1000) / 1000;
+					orderForm.grand_total.value = "$ " + grandTotal;
 					decimal(orderForm);
 				}
 			}
@@ -92,7 +90,7 @@
 						<td>
 						<input name="line" type="text" size="5" value="" onkeyup="count(this.form,1,5.95)">
 						</td>
-						<td>$7.95</td>
+						<td>$5.95</td>
 						<td align="right">
 						<input name="line_sum" type="text" size="10" readonly>
 						</td>
@@ -102,7 +100,7 @@
 						<td>
 						<input name="line" type="text" size="5" value="" onkeyup="count(this.form,2,5.95)">
 						</td>
-						<td>$8.95</td>
+						<td>$5.95</td>
 						<td align="right">
 						<input name="line_sum" type="text" size="10" readonly>
 						</td>

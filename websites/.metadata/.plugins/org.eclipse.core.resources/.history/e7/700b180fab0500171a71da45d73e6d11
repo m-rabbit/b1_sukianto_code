@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>My Order Form</title>
-		<script src="js/accounting.min.js"></script>
+		<script src="js/accounting.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
 		<style>
@@ -42,8 +42,7 @@
 						grandTotal += Math.ceil(orderForm.line_sum[i].value * 1000) / 1000;
 					}
 					grandTotal = Math.round(grandTotal * 100) / 100;
-					grandTotal = accounting.formatMoney(grandTotal);
-					orderForm.grand_total.value = grandTotal;
+					orderForm.grand_total.value = "$ " + grandTotal;
 					decimal(orderForm);
 				}
 			}
