@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Full Stack</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/fullstack.css">
+	</head>
+	<body>
+		<h1>I want to be a Full Stack Developer!</h1>
+		<h1> Created by Thea S. / May 2017</h1>
+		<div class="w3-bar w3-black">
+			<a href="index.html" class="w3-bar-item w3-button">Home</a>
+			<a href="https://stackoverflow.com/" class="w3-bar-item w3-button">StackOverflow</a>
+			<a href="#" class="w3-bar-item w3-button">w3schools</a>
+			<a href="#" class="w3-bar-item w3-button">Link 3</a>
+		</div>
+		<hr class="hrnav">
+		<h4>Task List for checkpoint grade (remove when done)</h4>
+		<ol>
+			<li>Use Google Fonts</li>
+			<li>Link to sites or pages for more info</li>
+			<li>
+				Explain "full", "stack", "LAMP stack" w/ inline links
+			</li>
+		</ol>
+	</body>
+</html>

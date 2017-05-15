@@ -1,0 +1,28 @@
+body {
+	background-image: url("../images/code.jpeg");
+	font-family: 'Kaushan Script', cursive;
+	margin-left: auto;
+}
+h1, h2, p {
+	text-align: center;
+	font-family: 'Kaushan Script', cursive;
+}
+
+p {
+	font-size: 20px;
+	text-align: center;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+
+.hrnav {
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: ridge;
+	border-width: 3px;
+	border-color: #ff00ff;
+}

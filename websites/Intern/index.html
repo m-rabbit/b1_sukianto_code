@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+	</head>
+	<h1>New JS Game!</h1>
+	<h2>Created by Thea S. / April 2017</h2>
+	<br>
+	<button onclick="startGame()">
+		Start Game!
+	</button>
+	<button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">
+		ACCELERATE
+	</button>
+	Width: <input type="text" id="gameWidth">
+	Height: <input type="text" id="gameHeight">
+	<button type="button" onclick="updateWidthHeight()">Update</button>
+	<p>
+		Use the ACCELERATE button to stay in the air
+	</p>
+	<p>
+		How long can you stay alive?
+	</p>
+	<script src="js/game.js"></script>
+	</body>
+</html>

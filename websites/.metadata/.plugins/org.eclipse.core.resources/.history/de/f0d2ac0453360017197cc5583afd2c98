@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Full Stack</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/fullstack.css">
+	</head>
+	<body>
+		<h1>I want to be a Full Stack Developer!</h1>
+		<h1> Created by Thea S. / May 2017</h1>
+		<div class="w3-bar w3-black w3-large">
+			<a href="index.html" class="w3-bar-item w3-button">Home</a>
+			<a href="https://stackoverflow.com/" class="w3-bar-item w3-button">StackOverflow</a>
+			<a href="https://www.w3schools.com/" class="w3-bar-item w3-button">W3</a>
+			<a href="https://dev.mysql.com/" class="w3-bar-item w3-button">MySQL</a>
+		</div>
+		<hr class="hrnav">
+		<h2>What does "Full" mean?</h2>
+		<p>A website consists of two distinct sections: the front end and the back end.
+			 The front end is the client side, or the components that the user directly interact with.
+			 The back end is the server side where the data is actually stored.</p>
+	</body>
+</html>

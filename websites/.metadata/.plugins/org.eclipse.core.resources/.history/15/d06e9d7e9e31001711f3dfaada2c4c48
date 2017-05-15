@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Full Stack</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" type="text/css" href="css/fullstack.css">
+	</head>
+	<body>
+		<h1>I want to be a Full Stack Developer!</h1>
+		<h1> Created by Thea S. / May 2017</h1>
+	</body>
+</html>

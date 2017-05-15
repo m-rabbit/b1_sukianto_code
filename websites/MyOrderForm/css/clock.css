@@ -1,0 +1,22 @@
+body {
+	text-align: center;
+	background-image: url("../gears.jpg");
+	font-family: 'UnifrakturCook', cursive;
+}
+canvas {
+	background-image: url("../sand.jpg");
+	border: 6px solid #FF0000;
+	box-shadow: 8px 8px 12px #FFFFFF;
+}
+
+#canvasDiv {
+	text-align: center;
+}
+
+h1 {
+	color: white;
+}
+
+h2 {
+	color: white;
+}

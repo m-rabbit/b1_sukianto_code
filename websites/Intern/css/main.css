@@ -1,0 +1,17 @@
+body {
+	text-align: center;
+	background-image: url("../images/space.png");
+	background-size: cover;
+	color: white;
+}
+
+canvas {
+    border:3px solid #d3d3d3;
+    background-color: #00FF0F;
+}
+
+button {
+	color: black;
+	border: 2px solid #0000FF;
+	box-shadow: 6px 6px #0000FF;
+}
