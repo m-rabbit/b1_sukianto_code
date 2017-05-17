@@ -61,7 +61,6 @@
 				-> lname varchar(30) NOT NULL 
 				-> yrInSchool int(2) );</pre></li>
 				<li>mysql> SHOW TABLES;</li>
-				<li>mysql> DESCRIBE student;</li>
 			</ol>
 		
 	</body>

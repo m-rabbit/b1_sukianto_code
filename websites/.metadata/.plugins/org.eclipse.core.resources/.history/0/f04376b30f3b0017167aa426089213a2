@@ -51,17 +51,6 @@
 				<li>$mysql -u root -p press enter</li>
 				<li>$password: type in toor it will not show anything</li>
 				<li>>mysql:</li>
-				<li>Open SQL in W3Schools</li>
-				<li>mysql> show databases</li>
-				<li>mysql> CREATE DATABASE b1_sukianto</li>
-				<li>mysql> USE b1_sukianto</li>
-				<li><pre>mysql> CREATE TABLE myTable (
-				-> id int(8) PRIMARY KEY NOT NULL AUTO_INCREMENT,
-				-> fname varchar(20),
-				-> lname varchar(30) NOT NULL 
-				-> yrInSchool int(2) );</pre></li>
-				<li>mysql> SHOW TABLES;</li>
-				<li>mysql> DESCRIBE student;</li>
 			</ol>
 		
 	</body>
