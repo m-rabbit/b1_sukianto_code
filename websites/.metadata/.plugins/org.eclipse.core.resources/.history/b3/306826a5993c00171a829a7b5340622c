@@ -55,13 +55,11 @@
 				<li>mysql> show databases</li>
 				<li>mysql> CREATE DATABASE b1_sukianto</li>
 				<li>mysql> USE b1_sukianto</li>
-				<li>
-				<pre>mysql> CREATE TABLE myTable (
+				<li><pre>mysql> CREATE TABLE myTable (
 				-> id int(8) PRIMARY KEY NOT NULL AUTO_INCREMENT,
 				-> fname varchar(20),
 				-> lname varchar(30) NOT NULL 
-				-> yrInSchool int(2) );
-				</pre></li>
+				-> yrInSchool int(2) );</pre></li>
 				<li>mysql> SHOW TABLES;</li>
 				<li>mysql> DESCRIBE student;</li>
 			</ol>
